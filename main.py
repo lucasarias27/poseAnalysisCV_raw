@@ -6,7 +6,7 @@ import os
 diretorio_atual = os.path.dirname(os.path.realpath(__file__))
 caminho_modelo = os.path.join(diretorio_atual, 'models', 'lite-model_movenet_singlepose_lightning_3.tflite')
 interpreter = tf.lite.Interpreter(model_path=caminho_modelo)
-
+print("uma mudança qualquer")
 interpreter.allocate_tensors()
 
 cap = cv.VideoCapture("exemplo.mp4") #coloque aqui o nome do video
